@@ -1,0 +1,121 @@
+/* Start Custom Variables */
+:root {
+  /* Colors */
+  --main-color: #3885ff;
+  --black-color-1: #000;
+  --black-color-2: #1a1a1a;
+  --white-color: #fff;
+  --gray-color: #d4d4d8;
+  /* Padding */
+  --section-padding: 60px;
+  /* Border & Border Radius */
+  --light-border: 1px solid var(--gray-color);
+  --radius-6: 6px;
+  --radius-30: 30px;
+  --radius-circle: 50%;
+  /* Transitions */
+  --transition-duration: 0.4s;
+  --cubic-bezier: cubic-bezier(0.68, -0.55, 0.27, 2.55);
+}
+/* End Custom Variables */
+/* Start Components */
+html[dir="rtl"] .event-box .zone {
+  left: initial;
+  right: 20px;
+}
+
+html[dir="rtl"] :where(.prev-btn, .next-btn) {
+  transform: rotate(180deg);
+}
+
+html[dir="rtl"] .prev-btn {
+  left: initial;
+  right: 20px;
+}
+
+html[dir="rtl"] .next-btn {
+  right: initial;
+  left: 20px;
+}
+/* End Components */
+/* Start Header */
+@media (max-width: 449px) {
+  html[dir="rtl"] header .content {
+    width: 58%;
+  }
+}
+/* End Header */
+/* Start Landing Section */
+html[dir="rtl"] .landing .container .logos .sponsor {
+  padding-left: 0;
+  margin-left: 0;
+  border-left: none;
+  padding-right: 20px;
+  margin-right: 10px;
+  border-right: var(--light-border);
+}
+
+html[dir="rtl"] .landing .container .main-btn {
+  transform: translateX(-50px);
+}
+/* End Landing Section */
+/* Start Nav Menu */
+html[dir="rtl"] .menu {
+  left: initial;
+  right: 0;
+  transform: translateX(100%);
+}
+
+html[dir="rtl"] .menu.open {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .menu .blur {
+  transform: translateX(50px);
+}
+/* End Nav Menu */
+/* Start Main Events Slider */
+html[dir="rtl"] .main-events .content {
+  transform: translateX(120px);
+}
+
+html[dir="rtl"] .main-events.show .content {
+  transform: translateX(0);
+}
+/* End Main Events Slider */
+/* Start Recap Section */
+html[dir="rtl"] .recap .text {
+  padding-right: 0;
+  padding-left: 30px;
+  transform: translateX(70px);
+}
+
+/* Small Screens & Down */
+@media (max-width: 991px) {
+  html[dir="rtl"] .recap .text {
+    padding-left: 0;
+  }
+}
+/* End Recap Section */
+/* Start Download Video */
+html[dir="rtl"] .download-app .content .text {
+  transform: translateX(50px);
+}
+
+html[dir="rtl"] .download-app.show .content .text {
+  transform: translateX(0);
+}
+/* End Download Video */
+/* Start Zone Info Section */
+html[dir="rtl"] .zone-info .row .box .footer i {
+  transform: rotate(180deg);
+}
+/* End Zone Info Section */
+/* Start Activities Section */
+/* Small & Medium Screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .activities .content .event-box .zone {
+    right: 15px;
+  }
+}
+/* End Activities Section */
